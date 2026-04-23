@@ -1,4 +1,5 @@
 streamlit
-pandas==2.2.2
+pandas==2.2.3
 numpy==1.26.4
-scikit-learn==1.4.2
+scikit-learn==1.7.2
+scipy==1.15.3
