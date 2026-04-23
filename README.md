@@ -1,1 +1,3 @@
-# UTSmd
+streamlit
+pandas
+scikit-learn
