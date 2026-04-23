@@ -3,8 +3,8 @@ import pandas as pd
 import pickle
 
 # LOAD MODEL
-clf_model = pickle.load(open("classification_model.pkl", "rb"))
-reg_model = pickle.load(open("regression_model.pkl", "rb"))
+clf_model = pickle.load(open("models/classification_model.pkl", "rb"))
+reg_model = pickle.load(open("models/regression_model.pkl", "rb"))
 
 st.set_page_config(page_title="Student Placement Predictor", layout="wide")
 
