@@ -66,66 +66,6 @@ input_data = pd.DataFrame([{
 st.subheader("Input Data")
 st.dataframe(input_data)
 
-# FIX INPUT DATA
-
-expected_cols = [
-    'cgpa',
-    'tenth_percentage',
-    'twelfth_percentage',
-    'backlogs',
-    'study_hours_per_day',
-    'attendance_percentage',
-    'projects_completed',
-    'internships_completed',
-    'coding_skill_rating',
-    'communication_skill_rating',
-    'aptitude_skill_rating',
-    'hackathons_participated',
-    'certifications_count',
-    'sleep_hours',
-    'stress_level',
-    'gender',
-    'branch',
-    'part_time_job',
-    'family_income_level',
-    'city_tier',
-    'internet_access',
-    'extracurricular_involvement'
-]
-
-for col in expected_cols:
-    if col not in input_data.columns:
-        input_data[col] = 0
-
-input_data = input_data[expected_cols]
-
-# Fix dtype numeric
-numeric_cols = [
-    'cgpa',
-    'tenth_percentage',
-    'twelfth_percentage',
-    'backlogs',
-    'study_hours_per_day',
-    'attendance_percentage',
-    'projects_completed',
-    'internships_completed',
-    'coding_skill_rating',
-    'communication_skill_rating',
-    'aptitude_skill_rating',
-    'hackathons_participated',
-    'certifications_count',
-    'sleep_hours',
-    'stress_level'
-]
-
-input_data[numeric_cols] = input_data[numeric_cols].astype(float)
-
-# DEBUG 
-st.write("DEBUG INPUT:")
-st.write(input_data)
-st.write(input_data.dtypes)
-
-
 # PREDIKSI
 if st.button("Predict"):
 
